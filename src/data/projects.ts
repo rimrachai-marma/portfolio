@@ -35,8 +35,8 @@ export const projects: Project[] = [
     description:
       "The website you're exploring now. A modern portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. It features dark mode support, smooth animations, a clean UI, and responsive design—showcasing my development skills, featured projects, and overall web expertise.",
     image: "/images/portfolio.jpg",
-    liveLink: "https://rimrachai-marma.vercel.app",
-    codeLink: "",
+    liveLink: "https://rimra.vercel.app",
+    codeLink: "https://github.com/rimrachai-marma/portfolio",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
 

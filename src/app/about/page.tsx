@@ -1,7 +1,7 @@
 import { FileIcon } from "@/components/icons/FileIcon";
 import { EmailIcon } from "@/components/icons/EmailIcon";
-import ExperienceSection from "./_components/ExperienceSection";
-import EducationSection from "./_components/EducationSection";
+// import ExperienceSection from "./_components/ExperienceSection";
+// import EducationSection from "./_components/EducationSection";
 import ProfileImage from "./_components/ProfileImage";
 import ExternalLinkButton from "@/components/ui/ExternalLinkButton";
 import AnnotatedText from "@/components/ui/AnnotatedText ";
@@ -85,7 +85,7 @@ export default async function About() {
               </li>
               <li>
                 <span className="mr-2.5">Tools and Platforms:</span>
-                AWS, Docker, Git, GitHub Action, Nginx
+                AWS, Docker, Kubernetes, Git, GitHub Action, Nginx
               </li>
               <li>
                 <span className="mr-2">Databases:</span>
@@ -102,8 +102,8 @@ export default async function About() {
         </div>
       </section>
 
-      <ExperienceSection />
-      <EducationSection />
+      {/* <ExperienceSection /> */}
+      {/* <EducationSection /> */}
     </>
   );
 }

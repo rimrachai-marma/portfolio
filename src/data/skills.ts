@@ -41,6 +41,18 @@ export const skills: Skill[] = [
     title: "Tailwind CSS",
     icon: "icons/tailwindcss.svg",
   },
+  {
+    title: "PostgreSQL",
+    icon: "icons/postgresql.svg",
+  },
+  {
+    title: "MongoDB",
+    icon: "icons/mongodb.svg",
+  },
+  {
+    title: "Redis",
+    icon: "icons/redis.svg",
+  },
   // {
   //   title: "Terminal",
   //   icon: "icons/terminal.svg",
@@ -74,18 +86,6 @@ export const skills: Skill[] = [
     icon: "icons/nginx.svg",
   },
 
-  {
-    title: "PostgreSQL",
-    icon: "icons/postgresql.svg",
-  },
-  {
-    title: "MongoDB",
-    icon: "icons/mongodb.svg",
-  },
-  {
-    title: "Redis",
-    icon: "icons/redis.svg",
-  },
   // {
   //   title: "Dart",
   //   icon: "icons/dart.svg",
