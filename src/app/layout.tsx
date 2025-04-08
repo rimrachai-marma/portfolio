@@ -17,7 +17,11 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rimrachai Marma",
+  title: {
+    default: "Rimrachai Marma",
+    template: "%s - Rimrachai Marma",
+  },
+
   description: "My online place for thoughts and musings",
   keywords: "Rimrachai, Marma, Developer, Software, Devops, Engineer",
 };

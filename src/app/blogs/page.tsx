@@ -1,5 +1,13 @@
+import { Metadata } from "next";
+
 import { Blog } from "@/types/index";
 import BlogCard from "./_components/BlogCard";
+
+export const metadata: Metadata = {
+  title: "Blogs",
+  description: "A collection of my thoughts and ideas.",
+  keywords: "Rimrachai, Marma, Blogs, Thoughts, Ideas",
+};
 
 export default async function Blogs() {
   const blogs: Blog[] = [];

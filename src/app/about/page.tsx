@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import { FileIcon } from "@/components/icons/FileIcon";
 import { EmailIcon } from "@/components/icons/EmailIcon";
 // import ExperienceSection from "./_components/ExperienceSection";
@@ -5,6 +7,12 @@ import { EmailIcon } from "@/components/icons/EmailIcon";
 import ProfileImage from "./_components/ProfileImage";
 import ExternalLinkButton from "@/components/ui/ExternalLinkButton";
 import AnnotatedText from "@/components/ui/AnnotatedText ";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "About Rimrachai Marma",
+  keywords: "Rimrachai, Marma, Developer, Software, Devops, Engineer",
+};
 
 export default async function About() {
   return (

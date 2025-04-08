@@ -1,5 +1,13 @@
+import { Metadata } from "next";
+
 import { projects } from "@/data/projects";
 import ProjectCard from "./_components/ProjectCard";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "A collection of my projects.",
+  keywords: "Rimrachai, Marma, Projects, Software, Engineer",
+};
 
 export default async function Projects() {
   return (
