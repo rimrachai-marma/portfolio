@@ -11,9 +11,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    // tablet_portrait:border-none
-    // tablet_portrait:p-0
-    <div className="sticky top-32 bg-background border border-dashed  border-gray-300 dark:border-gray-600 p-3 tablet_portrait:p-4  rounded-md flex flex-col gap-2 tablet_portrait:gap-5 tablet_portrait:flex-row-reverse tablet_portrait:odd:flex-row">
+    <div className="bg-background border border-dashed border-gray-300 dark:border-gray-600 tablet_portrait:border-none p-3 tablet_portrait:p-0 rounded-md flex flex-col gap-2 tablet_portrait:gap-5 tablet_portrait:flex-row-reverse tablet_portrait:odd:flex-row">
       <div className="relative aspect-[3/2] rounded-md overflow-hidden tablet_portrait:flex-1">
         <Image
           className="absolute h-full w-full top-0 left-0 object-cover"
@@ -43,7 +41,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           {project.technologies.map((tech) => (
             <li
               key={tech}
-              className="flex items-center text-xs font-semibold text-gray-600 dark:text-gray-400 tracking-wide px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600"
+              className="flex items-center text-tiny font-semibold text-gray-600 dark:text-gray-400 tracking-wide px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600"
             >
               {tech}
             </li>

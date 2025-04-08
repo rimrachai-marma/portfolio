@@ -63,11 +63,11 @@ export default async function About() {
           <p className="tracking-wider leading-7">
             I have experience in both frontend and backend development, working
             with technologies like React, Next.js, Node.js, and Express.
-            Additionally, I am skilled in leveraging cloud platforms like AWS
-            and containerization tools such as Docker to create scalable and
-            efficient applications. My approach combines a solid technical
-            foundation with continuous learning to craft innovative solutions
-            tailored to your needs.
+            Additionally, I am skilled in leveraging cloud platforms like AWS,
+            containerization tools such as Docker, and orchestration platforms
+            like Kubernetes to create scalable and efficient applications. My
+            approach combines a solid technical foundation with continuous
+            learning to craft innovative solutions tailored to your needs.
           </p>
 
           <div className="space-y-2">

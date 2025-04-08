@@ -17,6 +17,7 @@ import { HomeIcon } from "./icons/HomeIcon";
 const Header: React.FC = () => {
   const pathname = usePathname();
   const ref = React.useRef<HTMLSpanElement>(null);
+  const menuRef = React.useRef<HTMLInputElement>(null);
 
   React.useEffect(() => {
     const isDarkMode =
@@ -34,6 +35,12 @@ const Header: React.FC = () => {
 
     localStorage.setItem("data-theme", isDarkMode ? "dark" : "light");
   }, []);
+
+  const handleNavClick = () => {
+    if (menuRef.current) {
+      menuRef.current.checked = false;
+    }
+  };
 
   React.useEffect(() => {
     const typed = new Typed(ref.current, {
@@ -115,7 +122,13 @@ const Header: React.FC = () => {
                   htmlFor="menu"
                   className="flex tablet_portrait:hidden justify-center items-center h-8 w-8 border border-gray-400 dark:border-gray-600 rounded-md hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer"
                 >
-                  <input id="menu" type="checkbox" className="peer" hidden />
+                  <input
+                    ref={menuRef}
+                    id="menu"
+                    type="checkbox"
+                    className="peer"
+                    hidden
+                  />
                   <span className="w-5 h-1 bg-current rounded-2xs transition-transform before:bg-current after:bg-current before:content-[''] after:content-[''] before:absolute after:absolute before:w-5 after:w-5 before:h-1 after:h-1 before:-translate-y-[0.45rem] after:translate-y-[0.45rem] before:rounded-2xs after:rounded-2xs before:transition-transform after:transition-transform peer-checked:before:translate-y-0 peer-checked:after:translate-y-0 peer-checked:before:rotate-45 peer-checked:after:-rotate-45 peer-checked:bg-transparent"></span>
                 </label>
               </div>
@@ -125,13 +138,19 @@ const Header: React.FC = () => {
           <div className="hidden tablet_portrait:group-has-[input:checked]:hidden group-has-[input:checked]:flex h-[75vh] border-t border-gray-400 dark:border-gray-600 pt-10 pb-4 flex-col justify-between">
             <ul className="flex flex-col items-center gap-5 text-xl font-semibold tracking-wider">
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about" onClick={handleNavClick}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/projects">Projects</Link>
+                <Link href="/projects" onClick={handleNavClick}>
+                  Projects
+                </Link>
               </li>
               <li>
-                <Link href="/blogs">Blogs</Link>
+                <Link href="/blogs" onClick={handleNavClick}>
+                  Blogs
+                </Link>
               </li>
             </ul>
 

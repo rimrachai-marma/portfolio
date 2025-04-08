@@ -26,6 +26,8 @@
   --color-foreground: var(--foreground);
   --color-secondary-foreground: var(--secondary-foreground);
 
+  --text-tiny: 0.625rem;
+
   --radius-2xs: 0.0625rem;
 }
 

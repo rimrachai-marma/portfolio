@@ -13,6 +13,7 @@
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-github-calendar": "^4.5.6",
     "rough-notation": "^0.5.1",
     "typed.js": "^2.1.0"
   },

@@ -37,26 +37,26 @@ const ProjectSection: React.FC = () => {
         </div>
         <div className="col-start-2 row-start-3 row-span-2">
           <ProjectCard
-            title="Ecommerse Project"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut praesentium officia veniam architecto neque laboriosam mollitia, commodi debitis dolore"
-            image="/dog.png"
-            liveLink="#"
-            codeLink="#"
-            technologies={["React", "TypeScript", "Tailwind CSS"]}
+            title={projects[2].title}
+            description={projects[2].description}
+            image={projects[2].image}
+            liveLink={projects[2].liveLink}
+            codeLink={projects[2].codeLink}
+            technologies={projects[2].technologies}
           />
         </div>
         <div className="col-start-1 row-start-4 row-span-2">
           <ProjectCard
-            title="Ecommerse Project"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut praesentium officia veniam architecto neque laboriosam mollitia, commodi debitis dolore"
-            image="/dog.png"
-            liveLink="#"
-            codeLink="#"
-            technologies={["React", "TypeScript", "Tailwind CSS"]}
+            title={projects[3].title}
+            description={projects[3].description}
+            image={projects[3].image}
+            liveLink={projects[3].liveLink}
+            codeLink={projects[3].codeLink}
+            technologies={projects[3].technologies}
           />
         </div>
         <div className="col-start-2 row-start-5">
-          <div className="h-full tablet_portrait:ml-8 flex flex-col justify-center gap-2">
+          <div className="h-full tablet_portrait:ml-8 tablet_portrait:-mt-5 flex flex-col justify-center gap-2">
             <Link
               href="/projects"
               className="text-primary hover:text-secondary text-xl font-semibold"

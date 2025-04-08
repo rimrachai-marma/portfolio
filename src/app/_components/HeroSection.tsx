@@ -12,52 +12,52 @@ const HeroSection: React.FC = () => {
         Bringing Your Ideas to Life Through Software
       </h1>
 
-      <div className="text-sm text-secondary-foreground leading-6.5 tracking-wide tablet_portrait:text-base space-y-3">
+      <div className="text-sm text-secondary-foreground leading-6.5 tablet:tracking-wide tablet_portrait:text-base space-y-3">
         <p>
           <span role="img" aria-label="waving hand" className="wave text-4xl">
             &#128075;
           </span>
           I specialize in blending&nbsp;
-          <AnnotatedText type="underline" color="#b71c1c">
+          <AnnotatedText type="underline" strokeWidth={2} color="#b71c1c">
             technical
           </AnnotatedText>
           &nbsp; expertise with creativity and strategic insight to help
           businesses&nbsp;
-          <AnnotatedText type="circle" color="#4a148c">
+          <AnnotatedText type="circle" strokeWidth={2} color="#4a148c">
             build
           </AnnotatedText>
           &nbsp; and&nbsp;
-          <AnnotatedText type="circle" color="#4a148c">
+          <AnnotatedText type="circle" strokeWidth={2} color="#4a148c">
             improve
           </AnnotatedText>
           &nbsp; their software solutions.
         </p>
         <p>
           My focus is on delivering&nbsp;
-          <AnnotatedText type="underline" color="#1b5e20">
+          <AnnotatedText type="underline" strokeWidth={2} color="#1b5e20">
             user-friendly
           </AnnotatedText>
           ,&nbsp;
-          <AnnotatedText type="underline" color="#1b5e20">
+          <AnnotatedText type="underline" strokeWidth={2} color="#1b5e20">
             scalable
           </AnnotatedText>
           , and&nbsp;
-          <AnnotatedText type="underline" color="#1b5e20">
+          <AnnotatedText type="underline" strokeWidth={2} color="#1b5e20">
             efficient
           </AnnotatedText>
           &nbsp; applications that align with your&nbsp;
-          <AnnotatedText type="underline" color="#1b5e20">
+          <AnnotatedText type="underline" strokeWidth={2} color="#1b5e20">
             business goals and vision
           </AnnotatedText>
           .
         </p>
         <p className="font-semibold text-gray-600 dark:text-gray-300">
-          <AnnotatedText type="box" color="#ffd54f">
+          <AnnotatedText type="box" strokeWidth={2} color="#ffd54f">
             Together
           </AnnotatedText>
           , we can create something&nbsp;
           <AnnotatedText type="highlight" color="#f57f17">
-            Remarkable
+            remarkable
           </AnnotatedText>
           .
         </p>

@@ -15,7 +15,7 @@ const ProjectCard: React.FC<Props> = ({
   technologies,
 }) => {
   return (
-    <div className="border border-dashed border-gray-300 dark:border-gray-600 p-3 rounded-md flex flex-col gap-2">
+    <div className="h-full border border-dashed border-gray-300 dark:border-gray-600 p-3 rounded-md flex flex-col gap-2">
       <div className="relative aspect-[3/2] rounded-md overflow-hidden">
         <Image
           className="absolute h-full w-full top-0 left-0 object-cover"
@@ -41,7 +41,7 @@ const ProjectCard: React.FC<Props> = ({
           {technologies.map((tech) => (
             <li
               key={tech}
-              className="flex items-center text-xs font-semibold text-gray-600 dark:text-gray-400 tracking-wide px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600"
+              className="flex items-center text-tiny font-semibold text-gray-600 dark:text-gray-400 tracking-wide px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600"
             >
               {tech}
             </li>
