@@ -87,7 +87,7 @@ export default async function About() {
             <ul className="list-disc ml-6 space-y-1 marker:text-primary marker:text-xl">
               <li>
                 <span className="mr-2.5">Programming Languages:</span>
-                JavaScript, TypeScript, Python, Java
+                JavaScript, TypeScript, Python
               </li>
               <li>
                 <span className="mr-2.5">Frameworks and Technologies:</span>
