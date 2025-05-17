@@ -40,7 +40,7 @@ const AnnotatedText: React.FC<Props> = ({
 
   type,
   animate = true,
-  animationDuration = 800,
+  animationDuration = 1000,
   color = "currentColor",
   strokeWidth = 1,
   padding = 5,

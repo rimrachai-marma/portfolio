@@ -61,13 +61,25 @@ const Footer: React.FC = () => {
             </span>
           </p>
           <div className="flex justify-center gap-4">
-            <Link href="#">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/rimrachai-marma"
+            >
               <GithubIcon className="footer-social-icon" />
             </Link>
-            <Link href="#">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/iamrimra"
+            >
               <LinkinIcon className="footer-social-icon" />
             </Link>
-            <Link href="#">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/iamrimra"
+            >
               <InstaIcon className="footer-social-icon" />
             </Link>
           </div>

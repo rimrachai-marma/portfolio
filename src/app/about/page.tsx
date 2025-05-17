@@ -34,7 +34,7 @@ export default async function About() {
               <ExternalLinkButton href="https://github.com/rimrachai-marma">
                 GitHub
               </ExternalLinkButton>
-              <ExternalLinkButton href="https://www.linkedin.com/in/rimrachai-marma">
+              <ExternalLinkButton href="https://www.linkedin.com/in/iamrimra">
                 LinkedIn
               </ExternalLinkButton>
             </div>
@@ -50,7 +50,9 @@ export default async function About() {
             <span>Contact me</span>
           </a>
           <a
-            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1ptPM2A1ENu7gMZdke0kUujDkXqhac8WW/view?usp=sharing"
             className="flex gap-2 justify-between items-center text-primary dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full shadow-xs py-2.5 px-3.5 transition hover:text-secondary"
           >
             <FileIcon className="h-6 w-auto fill-current" />

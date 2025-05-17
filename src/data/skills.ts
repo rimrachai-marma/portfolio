@@ -102,10 +102,10 @@ export const skills: Skill[] = [
     title: "Django",
     icon: "icons/django.svg",
   },
-  {
-    title: "Java",
-    icon: "icons/java.svg",
-  },
+  // {
+  //   title: "Java",
+  //   icon: "icons/java.svg",
+  // },
   // {
   //   title: "Kotlin",
   //   icon: "icons/kotlin.svg",
