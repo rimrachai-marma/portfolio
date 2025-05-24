@@ -41,6 +41,13 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+
+        {/* temporary */}
+        <div className="fixed top-0 right-0 z-50 pointer-events-none">
+          <div className="absolute top-4 right-[-45px] bg-orange-700/70 text-white tracking-wider text-xs text-center px-10 py-1 rotate-45 shadow-md">
+            Under Construction
+          </div>
+        </div>
       </body>
     </html>
   );

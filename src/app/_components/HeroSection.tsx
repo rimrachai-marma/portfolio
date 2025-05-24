@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
           <span>About Me &rarr;</span>
         </Link>
         <a
-          href="#"
+          href="https://drive.google.com/file/d/188L6LuHyclydXPS5Ra-pxNIpNm5CX8Z0/view?usp=sharing"
           className="flex gap-2 justify-between items-center text-primary dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full shadow-xs py-2.5 px-3.5 transition hover:text-secondary"
         >
           <FileIcon className="h-6 w-auto fill-current" />
