@@ -49,4 +49,14 @@ export const projects: Project[] = [
     codeLink: "https://github.com/rimrachai-marma/Tic_Tac_Toe",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
+
+  {
+    title: "Store - Shopping Cart with React Context",
+    description:
+      "A full-featured React Shopping Cart project demonstrating how to properly use React Context API together with custom hooks. The project focuses on managing application state efficiently and organizing Context logic in a clean and scalable way.",
+    image: "/images/store.jpg",
+    liveLink: "https://beautiful-jelly-4b32d2.netlify.app/",
+    codeLink: "https://github.com/rimrachai-marma/react-shopping-cart",
+    technologies: ["React", "React Context API", "Bootstrap"],
+  },
 ];
