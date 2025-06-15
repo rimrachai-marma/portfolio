@@ -51,7 +51,7 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Store - Shopping Cart with React Context",
+    title: "Store - Shopping Cart with React Context API",
     description:
       "A full-featured React Shopping Cart project demonstrating how to properly use React Context API together with custom hooks. The project focuses on managing application state efficiently and organizing Context logic in a clean and scalable way.",
     image: "/images/store.jpg",
