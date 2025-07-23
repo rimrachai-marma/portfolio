@@ -50,7 +50,7 @@ export default async function About() {
             <span>Contact me</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/188L6LuHyclydXPS5Ra-pxNIpNm5CX8Z0/view?usp=sharing"
+            href="https://drive.google.com/file/d/1J03LgZMot1l2QLulrE4YCfDWtbTTiNo7/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-2 justify-between items-center text-primary dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full shadow-xs py-2.5 px-3.5 transition hover:text-secondary"
