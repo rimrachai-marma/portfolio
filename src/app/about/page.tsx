@@ -34,7 +34,7 @@ export default async function About() {
               <ExternalLinkButton href="https://github.com/rimrachai-marma">
                 GitHub
               </ExternalLinkButton>
-              <ExternalLinkButton href="https://www.linkedin.com/in/iamrimra">
+              <ExternalLinkButton href="https://www.linkedin.com/in/rimrachai-marma">
                 LinkedIn
               </ExternalLinkButton>
             </div>
@@ -65,19 +65,20 @@ export default async function About() {
             <span role="img" aria-label="waving hand" className="wave text-4xl">
               &#128075;
             </span>
-            I&apos;m Rimrachai, A dedicated and hardworking tech enthusiast with
-            a strong work ethic, I thrive on facing complex challenges and
-            solving them efficiently. I specialize in creating modern web
-            applications that are user-friendly and development.
+            I&apos;m Rimrachai, a dedicated and hardworking self-taught tech
+            enthusiast with a strong work ethic. I thrive on facing complex
+            challenges and solving them efficiently. I specialize in creating
+            modern web applications that are user-friendly and development.
           </p>
           <p className="tracking-wider leading-7">
             I have experience in both frontend and backend development, working
-            with technologies like React, Next.js, Node.js, and Express.
-            Additionally, I am skilled in leveraging cloud platforms like AWS,
-            containerization tools such as Docker, and orchestration platforms
-            like Kubernetes to create scalable and efficient applications. My
-            approach combines a solid technical foundation with continuous
-            learning to craft innovative solutions tailored to your needs.
+            with technologies like React, Next.js, Node.js, Express.js and PHP
+            Laravel. Additionally, I am skilled in leveraging cloud platforms
+            like AWS, containerization tools such as Docker, and orchestration
+            platforms like Kubernetes to create scalable and efficient
+            applications. My approach combines a solid technical foundation with
+            continuous learning to craft innovative solutions tailored to your
+            needs.
           </p>
 
           <div className="space-y-2">
@@ -87,11 +88,11 @@ export default async function About() {
             <ul className="list-disc ml-6 space-y-1 marker:text-primary marker:text-xl">
               <li>
                 <span className="mr-2.5">Programming Languages:</span>
-                JavaScript, TypeScript, Python
+                JavaScript, TypeScript, Python, PHP
               </li>
               <li>
                 <span className="mr-2.5">Frameworks and Technologies:</span>
-                React, Next.js, Node.js, Express, RESTful APIs
+                React, Next.js, Node.js, Express, Laravel, RESTful APIs
               </li>
               <li>
                 <span className="mr-2.5">Tools and Platforms:</span>

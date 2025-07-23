@@ -71,14 +71,14 @@ const Footer: React.FC = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/iamrimra"
+              href="https://www.linkedin.com/in/rimrachai-marma"
             >
               <LinkinIcon className="footer-social-icon" />
             </Link>
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.instagram.com/iamrimra"
+              href="https://www.instagram.com/marma.rimra"
             >
               <InstaIcon className="footer-social-icon" />
             </Link>

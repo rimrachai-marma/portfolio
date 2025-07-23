@@ -21,6 +21,16 @@ export const projects: Project[] = [
   },
 
   {
+    title: "Contact Management System",
+    description:
+      "A simple yet functiona Contact Management System app built with PHP and Laravel, featuring user authentication, contact search, status filtering, and pagination. The user interface is designed with Tailwind CSS for a clean and responsive experience.",
+    image: "/images/contact-management-system.jpg",
+    liveLink: "https://contact-management-system-brown.vercel.app/",
+    codeLink: "https://github.com/rimrachai-marma/contact-management-system",
+    technologies: ["PHP", "Laravel", "Tailwind CSS", "Blade"],
+  },
+
+  {
     title: "AUDIOPHILE",
     description:
       "A responsive e-commerce website built based on a Frontend Mentor design, showcasing a clean and intuitive user experience. It features responsive images. This project highlights development using Vanilla JavaScript and CSS, focusing on interactivity and performance.",
@@ -31,16 +41,6 @@ export const projects: Project[] = [
   },
 
   {
-    title: "PORTFOLIO",
-    description:
-      "The website you're exploring now. A modern portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. It features dark mode support, smooth animations, a clean UI, and responsive design—showcasing my development skills, featured projects, and overall web expertise.",
-    image: "/images/portfolio.jpg",
-    liveLink: "https://rimra.vercel.app",
-    codeLink: "https://github.com/rimrachai-marma/portfolio",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  },
-
-  {
     title: "Tic Tac Toe",
     description:
       "A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. This project focuses on core game logic using JavaScript, along with creative CSS styling, shapes, :not() selector, and hover effects.",
@@ -48,6 +48,16 @@ export const projects: Project[] = [
     liveLink: "https://jstictactoeg.netlify.app",
     codeLink: "https://github.com/rimrachai-marma/Tic_Tac_Toe",
     technologies: ["HTML", "CSS", "JavaScript"],
+  },
+
+  {
+    title: "PORTFOLIO",
+    description:
+      "The website you're exploring now. A modern portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. It features dark mode support, smooth animations, a clean UI, and responsive design—showcasing my development skills, featured projects, and overall web expertise.",
+    image: "/images/portfolio.jpg",
+    liveLink: "https://rimra.vercel.app",
+    codeLink: "https://github.com/rimrachai-marma/portfolio",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
 
   {

@@ -26,6 +26,15 @@ export const skills: Skill[] = [
     icon: "icons/express-dot-js.svg",
   },
   {
+    title: "PHP",
+    icon: "icons/php.svg",
+  },
+  {
+    title: "Laravel",
+    icon: "icons/laravel.svg",
+  },
+
+  {
     title: "HTML",
     icon: "icons/html5.svg",
   },
