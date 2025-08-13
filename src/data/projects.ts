@@ -2,6 +2,22 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    title: "Sky Quest",
+    description:
+      "Sky Quest is a flight search platform with a clean, responsive UI and excellent performance. Built using Next.js, TypeScript, and Tailwind CSS, it integrates the Amadeus API, featuring advanced passenger selection, detailed flight results, and full SEO optimization for a smooth and accurate travel booking experience.",
+    image: "/images/sky-quest.jpg",
+    liveLink: "https://sky-quest-blue.vercel.app",
+    codeLink: "https://github.com/rimrachai-marma/SkyQuest",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "Amadeus API",
+    ],
+  },
+
+  {
     title: "E-SHOP",
     description:
       "A fully functional e-commerce platform built with MERN stack, offering secure authentication, admin dashboard to manage products, users, and orders, dynamic product filtering with sorting and pagination, and secure PayPal payment integration handled on the backend.",
@@ -41,6 +57,16 @@ export const projects: Project[] = [
   },
 
   {
+    title: "Contact Management System API",
+    description:
+      "A Laravel-based Contact Management System API with authentication using Sanctum, allowing users to securely manage personal contacts. Implements robust request validation, authorization policies, custom middleware, and structured exception handling. Supports search, filtering, sorting, and starring contacts, ensuring consistent, secure, and user-friendly JSON API responses.",
+    image: "/images/contact-management-system-api.png",
+    codeLink:
+      "https://github.com/rimrachai-marma/contact-management-system-api",
+    technologies: ["PHP", "Laravel", "Sanctum Auth"],
+  },
+
+  {
     title: "Tic Tac Toe",
     description:
       "A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. This project focuses on core game logic using JavaScript, along with creative CSS styling, shapes, :not() selector, and hover effects.",
@@ -48,16 +74,6 @@ export const projects: Project[] = [
     liveLink: "https://jstictactoeg.netlify.app",
     codeLink: "https://github.com/rimrachai-marma/Tic_Tac_Toe",
     technologies: ["HTML", "CSS", "JavaScript"],
-  },
-
-  {
-    title: "PORTFOLIO",
-    description:
-      "The website you're exploring now. A modern portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. It features dark mode support, smooth animations, a clean UI, and responsive design—showcasing my development skills, featured projects, and overall web expertise.",
-    image: "/images/portfolio.jpg",
-    liveLink: "https://rimra.vercel.app",
-    codeLink: "https://github.com/rimrachai-marma/portfolio",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
 
   {

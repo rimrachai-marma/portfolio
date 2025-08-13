@@ -34,7 +34,9 @@ const ProjectCard: React.FC<Props> = ({
 
           <div className="flex justify-end items-center gap-2">
             <ExternalLinkButton href={codeLink}>Code</ExternalLinkButton>
-            <ExternalLinkButton href={liveLink}>Live</ExternalLinkButton>
+            {liveLink && (
+              <ExternalLinkButton href={liveLink}>Live</ExternalLinkButton>
+            )}
           </div>
         </div>
         <ul className="flex gap-1 flex-wrap">

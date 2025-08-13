@@ -32,9 +32,11 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             <ExternalLinkButton href={project.codeLink}>
               Code
             </ExternalLinkButton>
-            <ExternalLinkButton href={project.liveLink}>
-              Live
-            </ExternalLinkButton>
+            {project.liveLink && (
+              <ExternalLinkButton href={project.liveLink}>
+                Live
+              </ExternalLinkButton>
+            )}
           </div>
         </div>
         <ul className="flex gap-1 flex-wrap">
@@ -53,7 +55,11 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
 
         <div className="hidden tablet_portrait:flex items-center gap-2 border-t border-gray-300 dark:border-gray-600 pt-3">
           <ExternalLinkButton href={project.codeLink}>Code</ExternalLinkButton>
-          <ExternalLinkButton href={project.liveLink}>Live</ExternalLinkButton>
+          {project.liveLink && (
+            <ExternalLinkButton href={project.liveLink}>
+              Live
+            </ExternalLinkButton>
+          )}
         </div>
       </div>
     </div>

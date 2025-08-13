@@ -7,7 +7,7 @@ export interface Project {
   title: string;
   image: string;
   description: string;
-  liveLink: string;
+  liveLink?: string;
   codeLink: string;
   technologies: string[];
 }

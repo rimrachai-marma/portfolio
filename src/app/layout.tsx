@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 
   description: "My online place for thoughts and musings",
-  keywords: "Rimrachai, Marma, Developer, Software, Devops, Engineer",
+  keywords: "Rimrachai, Marma, Developer, Engineer, Software, Devops",
 };
 
 export default function RootLayout({
