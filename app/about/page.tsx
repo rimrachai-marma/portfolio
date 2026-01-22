@@ -114,7 +114,7 @@ export default async function About() {
       </section>
 
       <ExperienceSection />
-      <EducationSection />
+      {/* <EducationSection /> */}
     </>
   );
 }
