@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                 className="font-jetbrains-mono font-bold text-lg text-primary tracking-wider hover:text-secondary outline-hidden hover:scale-105 transition-all duration-300 ease-out"
                 href="/"
               >
-                rimra&#64;
+                rimrachai&#64;
               </Link>
               <ChevronIcon className="hidden tablet_portrait:block h-5.5 w-auto fill-current" />
               {pathname === "/" ? (

@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { Rubik, JetBrains_Mono } from "next/font/google";
+
+import {
+  Space_Grotesk,
+  Plus_Jakarta_Sans,
+  Bricolage_Grotesque,
+  JetBrains_Mono,
+} from "next/font/google";
+
 import { cookies } from "next/headers";
 import Script from "next/script";
 
@@ -12,14 +19,29 @@ import ThemeProvider, {
   ThemePreference,
 } from "@/components/providers/ThemeProvider";
 
-const rubik = Rubik({
-  variable: "--font-rubik",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+  display: "swap",
 });
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -37,6 +59,25 @@ export const metadata: Metadata = {
     "Software",
     "Devops",
   ],
+
+  openGraph: {
+    title: "Rimrachai Marma - Software Developer",
+    description: "My online place for thoughts and musings",
+    url: "https://rimrachai.com",
+    siteName: "Rimrachai Marma",
+    images: [
+      {
+        url: "https://avatars.githubusercontent.com/u/60957299?v=4",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Rimrachai Marma - Software Developer",
+    description: "My online place for thoughts and musings",
+    images: ["https://avatars.githubusercontent.com/u/60957299?v=4"],
+  },
 };
 
 export default async function RootLayout({
@@ -68,7 +109,7 @@ export default async function RootLayout({
       data-theme={theme ?? undefined}
     >
       <body
-        className={`${rubik.className} ${jetBrainsMono.variable} antialiased`}
+        className={`${plusJakartaSans.className} ${spaceGrotesk.variable} ${bricolage.variable} ${jetBrainsMono.variable} antialiased`}
       >
         <Script
           id="person-jsonld"
@@ -97,12 +138,4 @@ export default async function RootLayout({
       </body>
     </html>
   );
-}
-
-{
-  /* <div className="fixed top-0 right-0 z-50 pointer-events-none">
-  <div className="absolute top-4 right-[-45px] bg-orange-700/70 text-white tracking-wider text-xs text-center px-10 py-1 rotate-45 shadow-md">
-    Under Construction
-  </div>
-</div>; */
 }

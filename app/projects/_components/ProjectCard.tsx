@@ -18,7 +18,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           src={project.image}
           fill
           priority
-          quality={100}
+          quality={75}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           alt={project.title}
         />
       </div>

@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/* @plugin 'tailwind-scrollbar'; */
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -19,6 +18,9 @@
   --breakpoint-desktop: 80rem;
   --breakpoint-big_screen: 96rem;
 
+  --font-space-grotesk: var(--font-space-grotesk);
+  --font-plus-jakarta-sans: var(--font-plus-jakarta-sans);
+  --font-bricolage: var(--font-bricolage);
   --font-jetbrains-mono: var(--font-jetbrains-mono);
 
   --color-primary: var(--primary);
@@ -41,6 +43,23 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space-grotesk);
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-jetbrains-mono);
 }
 
 @layer components {

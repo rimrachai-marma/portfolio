@@ -12,7 +12,6 @@ const ProfileImage: React.FC = () => {
         src="/images/profile.png"
         fill
         priority
-        quality={100}
         alt="Rimrachai Marma"
       />
 

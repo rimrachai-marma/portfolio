@@ -6,7 +6,6 @@ import ProfileImage from "./_components/ProfileImage";
 import AnnotatedText from "@/components/ui/AnnotatedText ";
 import ExternalLinkButton from "@/components/ui/ExternalLinkButton";
 import ExperienceSection from "./_components/experience";
-import EducationSection from "./_components/education";
 
 export const metadata: Metadata = {
   title: "About",
@@ -22,9 +21,9 @@ export default async function About() {
           <ProfileImage />
 
           <div className="space-y-2.5">
-            <h1 className="font-extrabold text-4xl tablet:text-5xl text-primary">
+            <div className="font-bricolage font-extrabold text-4xl tablet:text-5xl text-primary">
               Rimrachai Marma
-            </h1>
+            </div>
             <h4 className="text-lg font-semibold text-secondary-foreground">
               <AnnotatedText type="highlight" color="#f57f17">
                 Software Developer

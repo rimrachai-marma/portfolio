@@ -12,14 +12,14 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ index, project }) => {
   return (
     <div className="h-full border border-dashed border-gray-300 dark:border-gray-600 p-3 rounded-md flex flex-col gap-2">
-      <div className="relative aspect-[3/2] rounded-md overflow-hidden">
+      <div className="relative aspect-3/2 rounded-md overflow-hidden">
         <Image
           className="absolute h-full w-full top-0 left-0 object-cover"
           src={project.image}
           fill
           priority={index < 2}
-          quality={85}
-          sizes="(max-width: 768px) 100vw, 50vw"
+          quality={75}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           alt={project.title}
         />
       </div>
