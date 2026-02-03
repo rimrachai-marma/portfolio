@@ -120,20 +120,22 @@ export default async function RootLayout({
           }}
         />
         <ThemeProvider initialTheme={theme}>
-          <Header />
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded"
-          >
-            Skip to main content
-          </a>
-          <main
-            id="main-content"
-            className="container max-w-5xl mx-auto px-4 tablet_portrait:px-14 py-12"
-          >
-            {children}
-          </main>
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded"
+            >
+              Skip to main content
+            </a>
+            <main
+              id="main-content"
+              className="container max-w-5xl mx-auto px-4 tablet_portrait:px-14 py-12 flex-1"
+            >
+              {children}
+            </main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

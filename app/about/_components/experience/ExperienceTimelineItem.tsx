@@ -1,15 +1,26 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
+
 import { LocationIcon } from "@/components/icons/LocationIcon";
 import { ExperienceTimeline } from "@/types";
 import { BriefcaseIcon } from "@/components/icons/BriefcaseIcon";
 
 interface Props {
   item: ExperienceTimeline;
+  index: number;
 }
 
-const ExperienceTimelineItem: React.FC<Props> = ({ item }) => {
+const ExperienceTimelineItem: React.FC<Props> = ({ item, index }) => {
   return (
-    <div className="timeline-group">
+    <motion.div
+      className="timeline-group"
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+    >
       <div className="space-y-2">
         <small className="text-sm text-gray-500 leading-none block">
           {item.period}
@@ -47,7 +58,7 @@ const ExperienceTimelineItem: React.FC<Props> = ({ item }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

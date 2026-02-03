@@ -24,7 +24,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
         />
       </div>
       <div className="space-y-2">
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-center">
           <h3 className="text-primary text-base tablet:text-xl font-semibold">
             {project.title}
           </h3>

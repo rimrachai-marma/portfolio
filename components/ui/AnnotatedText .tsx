@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { JSX } from "react";
 import { annotate } from "rough-notation";
 
 type BracketType = "left" | "right" | "top" | "bottom";
@@ -29,14 +29,16 @@ interface NotationProperties {
 
 interface Props extends React.HTMLAttributes<HTMLElement>, NotationProperties {
   children: React.ReactNode;
-  customElement?: string;
+  customElement?: keyof JSX.IntrinsicElements;
   hide?: boolean;
+  delay?: number;
 }
 
 const AnnotatedText: React.FC<Props> = ({
   children,
   customElement = "span",
   hide = false,
+  delay = 0,
 
   type,
   animate = true,
@@ -55,24 +57,30 @@ const AnnotatedText: React.FC<Props> = ({
 
   React.useEffect(() => {
     if (ref.current && !hide) {
-      const annotation = annotate(ref.current, {
-        type,
-        animate,
-        animationDuration,
-        color,
-        strokeWidth,
-        padding,
-        multiline,
-        iterations,
-        brackets,
-        rtl,
-      });
+      const timer = setTimeout(() => {
+        if (ref.current) {
+          const annotation = annotate(ref.current, {
+            type,
+            animate,
+            animationDuration,
+            color,
+            strokeWidth,
+            padding,
+            multiline,
+            iterations,
+            brackets,
+            rtl,
+          });
 
-      annotation.show();
+          annotation.show();
 
-      return () => {
-        annotation.remove();
-      };
+          return () => {
+            annotation.remove();
+          };
+        }
+      }, delay);
+
+      return () => clearTimeout(timer);
     }
   }, [
     hide,
@@ -86,8 +94,10 @@ const AnnotatedText: React.FC<Props> = ({
     iterations,
     rtl,
     brackets,
+    delay,
   ]);
 
+  // eslint-disable-next-line react-hooks/refs
   return React.createElement(customElement, { ref, ...rest }, children);
 };
 

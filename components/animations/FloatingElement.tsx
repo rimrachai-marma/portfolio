@@ -17,18 +17,16 @@ export const FloatingElement: React.FC<Props> = ({
   className = "",
 }) => {
   return (
-    <motion.div
-      animate={{
-        y: [-yOffset, yOffset, -yOffset],
-      }}
+    <motion.span
+      animate={{ y: [-yOffset, yOffset, -yOffset] }}
       transition={{
         duration,
         repeat: Infinity,
         ease: "easeInOut",
       }}
-      className={className}
+      className={`inline-block ${className}`}
     >
       {children}
-    </motion.div>
+    </motion.span>
   );
 };

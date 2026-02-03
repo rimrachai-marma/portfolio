@@ -24,7 +24,9 @@ export default async function Blogs() {
 
       <div className="space-y-8 tablet_portrait:space-y-12 pt-12 border-t border-gray-200 dark:border-gray-700">
         {blogs.length > 0 &&
-          blogs.map((blog, index) => <BlogCard key={index} blog={blog} />)}
+          blogs.map((blog, index) => (
+            <BlogCard index={index} key={index} blog={blog} />
+          ))}
 
         {blogs.length === 0 && (
           <p className="text-secondary-foreground font-light text-lg">
