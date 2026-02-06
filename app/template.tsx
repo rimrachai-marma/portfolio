@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { GithubIcon } from "@/components/icons/GithubIcon";
 import { InstaIcon } from "@/components/icons/InstaIcon";
 import { LinkinIcon } from "@/components/icons/LinkedinIcon";
+import { WhatsappIcon } from "@/components/icons/WhatsappIcon";
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
@@ -36,6 +37,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
               icon: LinkinIcon,
               href: "https://www.linkedin.com/in/rimrachai-marma",
               label: "LinkedIn",
+            },
+            {
+              icon: WhatsappIcon,
+              href: "https://wa.me/+8801581568089",
+              label: "WhatsApp",
             },
             {
               icon: InstaIcon,

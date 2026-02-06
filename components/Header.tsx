@@ -15,6 +15,7 @@ import { LinkinIcon } from "./icons/LinkedinIcon";
 import { InstaIcon } from "./icons/InstaIcon";
 import { HomeIcon } from "./icons/HomeIcon";
 import { useTheme } from "./providers/ThemeProvider";
+import { WhatsappIcon } from "./icons/WhatsappIcon";
 
 const Header: React.FC = () => {
   const pathname = usePathname();
@@ -257,6 +258,11 @@ const Header: React.FC = () => {
                         Icon: LinkinIcon,
                         href: "https://www.linkedin.com/in/rimrachai-marma",
                         label: "LinkedIn",
+                      },
+                      {
+                        Icon: WhatsappIcon,
+                        href: "https://wa.me/+8801581568089",
+                        label: "WhatsApp",
                       },
                       {
                         Icon: InstaIcon,

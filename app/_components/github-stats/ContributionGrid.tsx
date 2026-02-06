@@ -46,12 +46,11 @@ const getLevelColor = (level: string): string => {
 };
 
 export const ContributionGrid: React.FC<Props> = ({ contributionWeeks }) => {
-  const [tooltip, setTooltip] = React.useState({
-    visible: false,
-    x: 0,
-    y: 0,
-    day: null as ContributionDay | null,
-  });
+  const [activeDay, setActiveDay] = React.useState<ContributionDay | null>(null);
+  
+  const [anchorId, setAnchorId] = React.useState<string>("");
+  const [isVisible, setIsVisible] = React.useState(false);
+  const popoverRef = React.useRef<HTMLDivElement>(null);
 
   const weeks = React.useMemo(() => {
     if (!contributionWeeks || contributionWeeks.length === 0) return [];
@@ -100,21 +99,18 @@ export const ContributionGrid: React.FC<Props> = ({ contributionWeeks }) => {
     return _weeks;
   }, [contributionWeeks]);
 
-  const handleCellHover = (
-    e: React.MouseEvent<HTMLDivElement>,
-    day: ContributionDay
-  ): void => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setTooltip({
-      visible: true,
-      x: rect.left,
-      y: rect.top - 40,
-      day,
-    });
+  const handleCellHover = (day: ContributionDay, cellId: string): void => {
+    setActiveDay(day);
+    setAnchorId(cellId);
+    setIsVisible(true);
+    popoverRef.current?.showPopover();
   };
 
   const handleCellLeave = (): void => {
-    setTooltip({ ...tooltip, visible: false });
+    setIsVisible(false);
+    popoverRef.current?.hidePopover();
+    setActiveDay(null);
+    setAnchorId("");
   };
 
   return (
@@ -166,7 +162,12 @@ export const ContributionGrid: React.FC<Props> = ({ contributionWeeks }) => {
                     className={`size-3 rounded-xs cursor-pointer transition-all duration-200 hover:scale-[1.2] hover:outline-2 hover:outline-gray-400 dark:hover:outline-[#58a6ff] ${getLevelColor(
                       day.contributionLevel
                     )}`}
-                    onMouseEnter={(e) => handleCellHover(e, day)}
+                    style={{
+                      anchorName: `--cell-${weekIndex}-${i}`,
+                    }}
+                    onMouseEnter={() =>
+                      handleCellHover(day, `--cell-${weekIndex}-${i}`)
+                    }
                     onMouseLeave={handleCellLeave}
                   />
                 ) : (
@@ -181,16 +182,21 @@ export const ContributionGrid: React.FC<Props> = ({ contributionWeeks }) => {
         ))}
       </div>
 
-      {tooltip.visible && tooltip.day && (
+      {isVisible && activeDay && (
         <div
-          className="fixed rounded-md px-3 py-2 text-xs pointer-events-none z-50 block bg-gray-900 text-white shadow-[0_4px_12px_rgba(0,0,0,0.3)] dark:bg-[#161b22] dark:border dark:border-[#30363d] dark:text-[#c9d1d9] dark:shadow-[0_4px_12px_rgba(0,0,0,0.5)]"
+          ref={popoverRef}
+          popover="manual"
           style={{
-            left: `${tooltip.x}px`,
-            top: `${tooltip.y}px`,
+            positionAnchor: anchorId,
+            inset: "unset",
+            positionArea: "top center",
+            positionTryFallbacks: "flip-block, flip-inline, flip-block flip-inline",
+            margin: "0.25rem 0",
           }}
+          className="rounded-md text-nowrap px-3 py-2 text-xs pointer-events-none z-50 block bg-gray-900 text-white shadow-[0_4px_12px_rgba(0,0,0,0.3)] dark:bg-[#161b22] dark:border dark:border-[#30363d] dark:text-[#c9d1d9] dark:shadow-[0_4px_12px_rgba(0,0,0,0.5)]"
         >
-          {tooltip.day.contributionCount} contributions on{" "}
-          {formatOrdinalDate(tooltip.day.date)}
+          {activeDay.contributionCount} contributions on&nbsp;
+          {formatOrdinalDate(activeDay.date)}
         </div>
       )}
     </div>

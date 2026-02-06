@@ -4,6 +4,7 @@ import Link from "next/link";
 import { GithubIcon } from "./icons/GithubIcon";
 import { LinkinIcon } from "./icons/LinkedinIcon";
 import { InstaIcon } from "./icons/InstaIcon";
+import { WhatsappIcon } from "./icons/WhatsappIcon";
 
 const Footer: React.FC = () => {
   return (
@@ -76,6 +77,14 @@ const Footer: React.FC = () => {
               aria-label="Visit my Linkin profile"
             >
               <LinkinIcon className="footer-social-icon" />
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://wa.me/+8801581568089"
+              aria-label="Chat with me on WhatsApp"
+            >
+              <WhatsappIcon className="footer-social-icon" />
             </Link>
             <Link
               target="_blank"
