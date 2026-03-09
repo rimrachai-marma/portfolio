@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "About",
   description: "About Rimrachai Marma",
-  keywords: "Rimrachai, Marma, Developer, Engineer, Software, Devops",
+  keywords: "Rimrachai Marma, Rimrachai, Marma, Developer, Engineer, Software, DevOps",
 };
 
 export default async function About() {
@@ -53,7 +53,7 @@ export default async function About() {
           <div className="flex gap-3">
             <HoverScale scale={1.08}>
               <a
-                href="mailto:rimrachai02@gmail.com"
+                href="mailto:contact@rimrachai.com"
                 className="flex gap-2 justify-between items-center text-primary dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-full shadow-xs py-2.5 px-3.5 transition hover:text-secondary"
               >
                 <EmailIcon className="h-6 w-auto fill-current" />
