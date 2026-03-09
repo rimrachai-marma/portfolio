@@ -2,13 +2,23 @@ import { ExperienceTimeline } from "@/types";
 
 export const experience: ExperienceTimeline[] = [
   {
-    period: "Nov 2025 - Present",
+    period: "Nov 2025 - Feb 2026",
     role: "Jr. Software Developer",
     company: "HSBLCO LLC",
     company_url: "https://hsblco.com",
     description:
-      "Working as a Junior Full-Stack Developer using React, Next.js, Express.js and Laravel to build and maintain modern web applications. Responsible for developing reusable UI components, implementing REST APIs, and integrating frontend and backend systems. Collaborating with designers and senior developers to deliver scalable, user-focused solutions.",
+      "Worked as a Junior Full-Stack Developer using React, Next.js, Express.js, and Laravel to build and maintain modern web applications. Developed reusable UI components, implemented REST APIs, and integrated frontend and backend systems. Collaborated with designers and senior developers to deliver scalable, user-focused solutions.",
     employment_type: "Full-time",
     location: "Mirpur DOHS, Dhaka 1216, Bangladesh",
+  },
+  {
+    period: "Mar 2026 - Present",
+    role: "Full-Stack Software Developer",
+    company: "EGL",
+    company_url: "https://www.everythinggreen.org",
+    description:
+      "Developing and maintaining full-stack web applications using React, Next.js, Express.js, and PostgreSQL. Implementing new features, optimizing application performance, and ensuring smooth integration between frontend and backend. Collaborating with cross-functional teams to deliver eco-friendly, sustainable solutions.",
+    employment_type: "Full-time",
+    location: "Tsim Sha Tsui, Hong Kong",
   },
 ];
