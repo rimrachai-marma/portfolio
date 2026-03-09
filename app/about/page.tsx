@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default async function About() {
   return (
     <>
-      <section className="space-y-7">
+      <section id="about"  className="space-y-7">
         <div className="flex flex-col gap-3 tablet:flex-row-reverse tablet:justify-between tablet:items-end">
           <ProfileImage />
 
