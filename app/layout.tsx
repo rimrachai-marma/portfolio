@@ -8,7 +8,6 @@ import {
 } from "next/font/google";
 
 import { cookies } from "next/headers";
-import Script from "next/script";
 
 import "./globals.css";
 
@@ -52,18 +51,19 @@ export const metadata: Metadata = {
 
   description: "My online place for thoughts and musings",
   keywords: [
+    "Rimrachai Marma",
     "Rimrachai",
     "Marma",
     "Developer",
     "Engineer",
     "Software",
-    "Devops",
+    "DevOps",
   ],
 
   openGraph: {
     title: "Rimrachai Marma - Software Developer",
     description: "My online place for thoughts and musings",
-    url: "https://rimrachai.com",
+    url: "https://www.rimrachai.com",
     siteName: "Rimrachai Marma",
     images: [
       {
@@ -93,7 +93,7 @@ export default async function RootLayout({
     "@type": "Person",
     name: "Rimrachai Marma",
     jobTitle: "Software Developer",
-    url: "https://rimra.vercel.app",
+    url: "https://www.rimrachai.com",
     image: "https://avatars.githubusercontent.com/u/60957299?v=4",
     email: "mailto:rimrachai02@gmail.com",
     sameAs: [
@@ -111,12 +111,11 @@ export default async function RootLayout({
       <body
         className={`${plusJakartaSans.className} ${spaceGrotesk.variable} ${bricolage.variable} ${jetBrainsMono.variable} antialiased`}
       >
-        <Script
+        <script
           id="person-jsonld"
           type="application/ld+json"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
+            __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
           }}
         />
         <ThemeProvider initialTheme={theme}>
