@@ -56,7 +56,7 @@ const ExperienceTimelineItem: React.FC<Props> = ({ item, index }) => {
             <LocationIcon className="h-5 w-auto fill-current" />
             <span>{item.location.name}</span>
             {item.location.isRemote && (
-              <span className="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-primary/10 text-secondary border border-primary/30">
+              <span className="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-primary/10 text-secondary border border-primary/50">
                 Remote
               </span>
             )}
