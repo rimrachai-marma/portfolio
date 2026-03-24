@@ -37,5 +37,8 @@ export interface ExperienceTimeline {
   company_url?: string;
   description: string;
   employment_type: string;
-  location: string;
+  location: {
+    name: string;
+    isRemote: boolean;
+  };
 }
