@@ -17,10 +17,10 @@ export const experience: ExperienceTimeline[] = [
   {
     period: "Mar 2026 - Present",
     role: "Full-Stack Software Developer",
-    company: "EGL",
+    company: "EGL / Everything Green",
     company_url: "https://www.everythinggreen.org",
     description:
-      "Developing and maintaining full-stack web applications using React, Next.js, Express.js, and PostgreSQL. Implementing new features, optimizing application performance, and ensuring smooth integration between frontend and backend. Collaborating with cross-functional teams to deliver eco-friendly, sustainable solutions.",
+      "Building and optimizing SEO and web performance tools with React, Next.js, Express.js, and PostgreSQL. Delivering carbon emission analysis, CRO tooling, and SEO features to help businesses worldwide improve performance, sustainability, and user experience. Collaborating with a team to create high-performance, eco-friendly solutions.",
     employment_type: "Full-time",
     location: {
       name: "Tsim Sha Tsui, Hong Kong",
