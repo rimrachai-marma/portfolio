@@ -93,16 +93,19 @@ export default async function About() {
                   &#128075;
                 </span>
               </FloatingElement>
-              I&apos;m Rimrachai, a dedicated and hardworking self-taught tech
-              enthusiast with a strong work ethic. I thrive on facing complex
-              challenges and solving them efficiently. I specialize in creating
-              modern web applications that are user-friendly and development.
+              I&apos;m Rimrachai, a dedicated and hardworking self-taught Full-Stack Software Developer with a strong work ethic and a passion for solving complex problems efficiently. I specialize in building modern, user-friendly, and high-performance web applications that deliver real impact.
             </p>
           </StaggerItem>
 
           <StaggerItem>
             <p className="tracking-wider leading-7">
-              I have experience in both frontend and backend development,
+              Currently, I am working as a Full Stack Software Developer at EGL / Everything Green (Mar 2026 – Present), where I focus on building and optimizing SEO and web performance tools. Using technologies like React, Next.js, Express.js, and PostgreSQL, I contribute to developing solutions such as carbon emission analysis, CRO tooling, and advanced SEO features. My work helps businesses worldwide improve performance, sustainability, and user experience. I collaborate closely with a remote team to deliver scalable and eco-friendly digital products.
+            </p>
+          </StaggerItem>
+
+          <StaggerItem>
+            <p className="tracking-wider leading-7">
+              I have experience across both frontend and backend development,
               working with technologies like React, Next.js, Node.js, Express.js
               and PHP Laravel. Additionally, I am skilled in leveraging cloud
               platforms like AWS, containerization tools such as Docker, and
@@ -125,7 +128,7 @@ export default async function About() {
                 </li>
                 <li>
                   <span className="mr-2.5">Frameworks and Technologies:</span>
-                  React, Next.js, Node.js, Express, Laravel, RESTful APIs
+                  React, Next.js, Node.js, Express, Laravel, RESTful, GraphQL APIs
                 </li>
                 <li>
                   <span className="mr-2.5">Tools and Platforms:</span>
@@ -133,7 +136,7 @@ export default async function About() {
                 </li>
                 <li>
                   <span className="mr-2">Databases:</span>
-                  MongoDB, PostgreSQL, MySQL
+                  MongoDB, PostgreSQL, MySQL, Redis
                 </li>
               </ul>
             </div>
