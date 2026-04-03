@@ -38,12 +38,11 @@ export const projects: Project[] = [
 
   {
     title: "Contact Management System",
-    description:
-      "A simple yet functiona Contact Management System app built with PHP and Laravel, featuring user authentication, contact search, status filtering, and pagination. The user interface is designed with Tailwind CSS for a clean and responsive experience.",
+    description: "A full-featured Contact Management System built with PHP and Laravel, offering secure user authentication, advanced contact search, status-based filtering, and efficient pagination. Developed using Laravel Livewire for dynamic interactions and styled with Tailwind CSS, the application delivers a responsive, modern, and seamless user experience.",
     image: "/images/contact-management-system.jpg",
-    liveLink: "https://contact-management-system-brown.vercel.app/",
-    codeLink: "https://github.com/rimrachai-marma/contact-management-system",
-    technologies: ["PHP", "Laravel", "Tailwind CSS", "Blade"],
+    liveLink: "https://contact-management-system-eta.vercel.app",
+    codeLink: "https://github.com/rimrachai-marma/contact-management-system-livewire",
+    technologies: ["PHP", "Laravel", "Livewire", "Tailwind CSS", "Blade"],
   },
 
   {
