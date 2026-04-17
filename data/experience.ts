@@ -17,7 +17,7 @@ export const experience: ExperienceTimeline[] = [
   {
     period: "Mar 2026 - Present",
     role: "Full-Stack Software Developer",
-    company: "EGL / Everything Green",
+    company: "ETG / Everything Green",
     company_url: "https://www.everythinggreen.org",
     description:
       "Building and optimizing SEO and web performance tools with React, Next.js, Express.js, and PostgreSQL. Delivering carbon emission analysis, CRO tooling, and SEO features to help businesses worldwide improve performance, sustainability, and user experience. Collaborating with a team to create high-performance, eco-friendly solutions.",
