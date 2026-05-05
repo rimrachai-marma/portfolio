@@ -22,6 +22,10 @@ export const skills: Skill[] = [
     icon: "icons/node-dot-js.svg",
   },
   {
+    title: "Bun",
+    icon: "icons/Bun.svg",
+  },
+  {
     title: "Express.js",
     icon: "icons/express-dot-js.svg",
   },
@@ -83,12 +87,20 @@ export const skills: Skill[] = [
     icon: "icons/github.svg",
   },
   {
+    title: "GitHub Actions",
+    icon: "icons/GitHub Actions.svg",
+  },
+  {
     title: "Docker",
     icon: "icons/docker.svg",
   },
   {
     title: "Kubernetes",
     icon: "icons/kubernetes.svg",
+  },
+  {
+    title: "Argo CD",
+    icon: "icons/Argo CD.svg",
   },
   {
     title: "Amazon Web Services",
