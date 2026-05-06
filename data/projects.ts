@@ -56,6 +56,15 @@ export const projects: Project[] = [
   },
 
   {
+    title: "ArgoCD GitOps Pipeline",
+    description:
+      "A complete GitOps pipeline built with ArgoCD, ArgoCD Image Updater, and Kustomize. Implements a full CI/CD loop where GitHub Actions builds and pushes Docker images, Image Updater detects new tags and commits updated manifests back to Git, and ArgoCD syncs the cluster automatically. Features separate dev and prod environments with distinct update strategies newest-build for dev and semver for prod managed through Kustomize overlays.",
+    image: "/images/argocd_gitops_pipeline.png",
+    codeLink:
+      "https://github.com/rimrachai-marma/argocd-practice-app",
+    technologies: ["GitHub Actions", "Docker", "Kubernetes", "ArgoCD", "ArgoCD Image Updater"],
+  },
+  {
     title: "Contact Management System API",
     description:
       "A Laravel-based Contact Management System API with authentication using Sanctum, allowing users to securely manage personal contacts. Implements robust request validation, authorization policies, custom middleware, and structured exception handling. Supports search, filtering, sorting, and starring contacts, ensuring consistent, secure, and user-friendly JSON API responses.",
@@ -64,7 +73,6 @@ export const projects: Project[] = [
       "https://github.com/rimrachai-marma/contact-management-system-api",
     technologies: ["PHP", "Laravel", "Sanctum Auth"],
   },
-
   {
     title: "Tic Tac Toe",
     description:
