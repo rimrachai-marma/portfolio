@@ -2,6 +2,22 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    title: "Filo",
+    description: "A full-stack cloud file storage platform with tiered subscription plans, nested folders, and secure sharing. Built with a Next.js App Router frontend and an Express/Prisma backend, it features a custom resumable multipart upload system  parallel chunked uploads to Cloudflare R2 with automatic retry and session recovery across reloads  alongside plan-based quota enforcement and expiring public share links, all backed by JWT auth with refresh-token rotation.",
+    image: "/images/sky-quest.jpg",
+    liveLink: "https://filo.rimrachai.com",
+    codeLink: "https://github.com/rimrachai-marma/filo",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Cloudflare R2",
+      "Tailwind CSS"
+    ],
+  },
+  {
     title: "Sky Quest",
     description:
       "Sky Quest is a flight search platform with a clean, responsive UI and excellent performance. Built using Next.js, TypeScript, and Tailwind CSS, it integrates the Amadeus API, featuring advanced passenger selection, detailed flight results, and full SEO optimization for a smooth and accurate travel booking experience.",
