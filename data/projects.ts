@@ -3,20 +3,22 @@ import { Project } from "@/types";
 export const projects: Project[] = [
   {
     title: "Filo",
-    description: "A full-stack cloud file storage platform with tiered subscription plans, nested folders, and secure sharing. Built with a Next.js App Router frontend and an Express/Prisma backend, it features a custom resumable multipart upload system  parallel chunked uploads to Cloudflare R2 with automatic retry and session recovery across reloads  alongside plan-based quota enforcement and expiring public share links, all backed by JWT auth with refresh-token rotation.",
-    image: "/images/filo.png",
+    description:
+      "A full-stack cloud file storage platform with tiered subscription plans, nested folders, and secure sharing. Built with a Next.js App Router frontend and an Express/Prisma backend, it features a custom resumable multipart upload system  parallel chunked uploads to Cloudflare R2 with automatic retry and session recovery across reloads  alongside plan-based quota enforcement and expiring public share links, all backed by JWT auth with refresh-token rotation.",
+    image: "/images/agent.png",
     liveLink: "https://filo.rimrachai.com",
     codeLink: "https://github.com/rimrachai-marma/filo",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Express",
-      "Prisma",
-      "PostgreSQL",
-      "Cloudflare R2",
-      "Tailwind CSS"
-    ],
+    technologies: ["Next.js", "TypeScript", "Express", "Prisma", "PostgreSQL", "Cloudflare R2", "Tailwind CSS"],
   },
+  {
+    title: "Ecommerce AI Agent",
+    description:
+      "A conversational shopping assistant built with LangGraph and Google Gemini, backed by PostgreSQL and pgvector for semantic product search. The agent extracts price ranges and variant attributes like color, size, and material directly from natural language queries, combining vector similarity search with structured SQL filtering to surface in-stock products with live pricing and review data. Conversations are checkpointed per thread in Postgres, giving the assistant persistent memory across multi-turn interactions.",
+    image: "/images/filo.png",
+    codeLink: "https://github.com/rimrachai-marma/ecommerce-agent",
+    technologies: ["Bun", "TypeScript", "Express", "LangGraph", "PostgreSQL", "pgvector", "Google Gemini"],
+  },
+
   {
     title: "Sky Quest",
     description:
@@ -24,13 +26,7 @@ export const projects: Project[] = [
     image: "/images/sky-quest.jpg",
     liveLink: "https://sky-quest-blue.vercel.app",
     codeLink: "https://github.com/rimrachai-marma/SkyQuest",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Shadcn/ui",
-      "Amadeus API",
-    ],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/ui", "Amadeus API"],
   },
 
   {
@@ -40,21 +36,13 @@ export const projects: Project[] = [
     image: "/images/eshop.jpg",
     liveLink: "https://eshop-aa7f.onrender.com/",
     codeLink: "https://github.com/rimrachai-marma/eshop",
-    technologies: [
-      "React",
-      "SAAS",
-      "React Router,",
-      "Redux Toolkit",
-      "Node.js",
-      "Express",
-      "Mongoose",
-      "PayPal API",
-    ],
+    technologies: ["React", "SAAS", "React Router,", "Redux Toolkit", "Node.js", "Express", "Mongoose", "PayPal API"],
   },
 
   {
     title: "Contact Management System",
-    description: "A full-featured Contact Management System built with PHP and Laravel, offering secure user authentication, advanced contact search, status-based filtering, and efficient pagination. Developed using Laravel Livewire for dynamic interactions and styled with Tailwind CSS, the application delivers a responsive, modern, and seamless user experience.",
+    description:
+      "A full-featured Contact Management System built with PHP and Laravel, offering secure user authentication, advanced contact search, status-based filtering, and efficient pagination. Developed using Laravel Livewire for dynamic interactions and styled with Tailwind CSS, the application delivers a responsive, modern, and seamless user experience.",
     image: "/images/contact-management-system.jpg",
     liveLink: "https://contact-management-system-eta.vercel.app",
     codeLink: "https://github.com/rimrachai-marma/contact-management-system-livewire",
@@ -76,8 +64,7 @@ export const projects: Project[] = [
     description:
       "A complete GitOps pipeline built with ArgoCD, ArgoCD Image Updater, and Kustomize. Implements a full CI/CD loop where GitHub Actions builds and pushes Docker images, Image Updater detects new tags and commits updated manifests back to Git, and ArgoCD syncs the cluster automatically. Features separate dev and prod environments with distinct update strategies newest-build for dev and semver for prod managed through Kustomize overlays.",
     image: "/images/argocd_gitops_pipeline.png",
-    codeLink:
-      "https://github.com/rimrachai-marma/argocd-practice-app",
+    codeLink: "https://github.com/rimrachai-marma/argocd-practice-app",
     technologies: ["GitHub Actions", "Docker", "Kubernetes", "ArgoCD", "ArgoCD Image Updater"],
   },
   {
@@ -85,8 +72,7 @@ export const projects: Project[] = [
     description:
       "A Laravel-based Contact Management System API with authentication using Sanctum, allowing users to securely manage personal contacts. Implements robust request validation, authorization policies, custom middleware, and structured exception handling. Supports search, filtering, sorting, and starring contacts, ensuring consistent, secure, and user-friendly JSON API responses.",
     image: "/images/contact-management-system-api.png",
-    codeLink:
-      "https://github.com/rimrachai-marma/contact-management-system-api",
+    codeLink: "https://github.com/rimrachai-marma/contact-management-system-api",
     technologies: ["PHP", "Laravel", "Sanctum Auth"],
   },
   {
