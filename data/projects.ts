@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "Filo",
     description:
       "A full-stack cloud file storage platform with tiered subscription plans, nested folders, and secure sharing. Built with a Next.js App Router frontend and an Express/Prisma backend, it features a custom resumable multipart upload system  parallel chunked uploads to Cloudflare R2 with automatic retry and session recovery across reloads  alongside plan-based quota enforcement and expiring public share links, all backed by JWT auth with refresh-token rotation.",
-    image: "/images/agent.png",
+    image: "/images/filo.png",
     liveLink: "https://filo.rimrachai.com",
     codeLink: "https://github.com/rimrachai-marma/filo",
     technologies: ["Next.js", "TypeScript", "Express", "Prisma", "PostgreSQL", "Cloudflare R2", "Tailwind CSS"],
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: "Ecommerce AI Agent",
     description:
       "A conversational shopping assistant built with LangGraph and Google Gemini, backed by PostgreSQL and pgvector for semantic product search. The agent extracts price ranges and variant attributes like color, size, and material directly from natural language queries, combining vector similarity search with structured SQL filtering to surface in-stock products with live pricing and review data. Conversations are checkpointed per thread in Postgres, giving the assistant persistent memory across multi-turn interactions.",
-    image: "/images/filo.png",
+    image: "/images/agent.png",
     codeLink: "https://github.com/rimrachai-marma/ecommerce-agent",
     technologies: ["Bun", "TypeScript", "Express", "LangGraph", "PostgreSQL", "pgvector", "Google Gemini"],
   },
